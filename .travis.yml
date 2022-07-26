@@ -33,7 +33,7 @@ script:
   - cd keyboard/gt-ble60/
   - make -j 16
   - cd ../../
-  - ls keyboard/gt-ble60/
+  - ls -al keyboard/gt-ble60/
 deploy:
   provider: releases
   token: $KEY
