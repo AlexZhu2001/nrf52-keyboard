@@ -31,7 +31,7 @@ script:
   - cd ../
   - git status
   - cd keyboard
-  - make -j
+  - travis_wait 60 make -j
   - cd ../
 deploy:
   provider: releases
