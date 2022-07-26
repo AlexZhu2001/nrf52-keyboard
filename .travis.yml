@@ -33,11 +33,11 @@ script:
   - cd keyboard/gt-ble60/
   - make -j 16
   - cd ../../
-  - echo 0
+  - ls keyboard/gt-ble60/
 deploy:
   provider: releases
   token: $KEY
-  file_glob: true
+  file_glob: false
   file: 
     - keyboard/gt-ble60/_build/*.zip
     - keyboard/gt-ble60/_build/*.bin
