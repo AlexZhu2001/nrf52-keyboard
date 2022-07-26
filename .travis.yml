@@ -41,6 +41,4 @@ deploy:
     - keyboard/gt-ble60/_build/*.zip
     - keyboard/gt-ble60/_build/*.bin
   cleanup: false
-  on:
-    tags: true
 
