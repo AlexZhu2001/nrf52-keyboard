@@ -33,9 +33,10 @@ script:
   - cd keyboard/gt-ble60/
   - make -j 16
   - cd ../../
+  - echo 0
 deploy:
   provider: releases
-  token: $APIKEY
+  token: $GH_TOKEN
   file_glob: true
   file: 
     - keyboard/gt-ble60/_build/*.zip
