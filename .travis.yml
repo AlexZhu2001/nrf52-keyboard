@@ -35,12 +35,12 @@ script:
   - cd ../../
 deploy:
   provider: releases
-  api_key: $APIKEY
+  token: $APIKEY
   file_glob: true
   file: 
     - keyboard/gt-ble60/_build/*.zip
     - keyboard/gt-ble60/_build/*.bin
-  skip_cleanup: true
+  cleanup: false
   on:
     tags: true
 
