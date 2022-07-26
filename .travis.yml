@@ -32,7 +32,7 @@ script:
   - git status
   - cd keyboard/gt-ble60/
   - make -j 16
-  - cd ../
+  - cd ../../
 deploy:
   provider: releases
   api_key: $APIKEY
